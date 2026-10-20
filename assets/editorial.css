@@ -142,4 +142,29 @@ blockquote footer{font:12px/1.6 var(--mono)}
  .article-shell{padding:30px 20px 60px}.article-shell h1{font-size:clamp(36px,7.2vw,52px)}
  .article-body blockquote{font-size:22px;padding-left:20px}
 }
-@media print{body{background:white;color:black}.motion-toggle,.reading-progress{display:none}}
+.press-actions{display:flex;align-items:center;gap:28px}
+.section-head .press-actions .text-link{max-width:none;text-align:left}
+.carousel-controls{display:flex;gap:10px}
+.carousel-controls button{width:48px;height:48px;border:1px solid var(--ink);border-radius:50%;background:transparent;color:var(--ink);font:25px/1 var(--sans)}
+.carousel-controls button:hover:not(:disabled){background:var(--ink);color:var(--paper)}
+.carousel-controls button:disabled{opacity:.3;cursor:default}
+.press-track{display:flex;gap:24px;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;padding:5px 0 16px;overscroll-behavior-x:contain}
+.press-track::-webkit-scrollbar{display:none}
+.press-card{flex:0 0 calc((100% - 24px)/2);min-width:0;scroll-snap-align:start;border:1px solid var(--line);background:#eeeee5;display:flex;flex-direction:column}
+.press-photo{display:block;overflow:hidden}
+.press-photo img{width:100%;height:auto;aspect-ratio:16/10;object-fit:cover;object-position:center 35%;transition:transform .35s}
+.press-photo:hover img{transform:scale(1.035)}
+.press-card-copy{padding:28px;display:flex;flex:1;flex-direction:column}
+.press-card h3{font:700 clamp(24px,2.5vw,31px)/1.2 var(--sans);letter-spacing:-.025em;margin:0 0 18px}
+.press-card h3 a{text-decoration:none}
+.press-card-copy>p:not(.meta){font:17px/1.6 var(--serif);color:var(--muted);margin-bottom:24px}
+.press-card .text-link{margin-top:auto;align-self:start}
+.carousel-status{font:11px/1.6 var(--mono);color:var(--muted);margin:4px 0 0}
+@media(max-width:760px){
+ .press-carousel .section-head{flex-wrap:wrap}
+ .press-actions{width:100%;justify-content:space-between;gap:16px}
+ .press-card{flex-basis:100%}
+ .press-card-copy{padding:24px}
+ .press-card h3{font-size:27px}
+}
+@media print{body{background:white;color:black}.motion-toggle,.reading-progress,.carousel-controls{display:none}.press-track{display:block;overflow:visible}.press-card{break-inside:avoid}}

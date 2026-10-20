@@ -1,0 +1,29 @@
+[
+  {
+    "id": "forbes",
+    "url": "https://www.forbesargentina.com/innovacion/pablo-aristizabal-flexflix-necesitamos-sarmiento-inteligencia-artificial-n46098",
+    "title": "Necesitamos un Sarmiento de la Inteligencia Artificial",
+    "source": "Forbes Argentina",
+    "image_source": "https://statics.forbesargentina.com/2023/12/65848981da118.jpg",
+    "image": "assets/img/nota-forbes.webp",
+    "summary": "Conocido por su pasión por emprender, Aristizábal acaba de lanzar FlexFlix, una plataforma de streaming con enfoque curricular."
+  },
+  {
+    "id": "los-andes",
+    "url": "https://www.losandes.com.ar/sociedad/pablo-aristizabal-especialista-ia-la-verdadera-amenaza-es-que-dejemos-pensar-n5983135",
+    "title": "La verdadera amenaza es que dejemos de pensar",
+    "source": "Los Andes",
+    "image": "assets/img/nota-los-andes.webp",
+    "image_source": "https://media.losandes.com.ar/p/715b67e2401b3af3ae1d314e3b0e61f5/adjuntos/368/imagenes/100/696/0100696841/1000x0/smart/pablo-aristizabalparticipo-las-actividades-vendimia.jpg",
+    "summary": "Pablo Aristizábal es un destacado especialista en tecnologías y un referente de IA aplicada a la educación."
+  },
+  {
+    "id": "la-nacion",
+    "url": "https://www.lanacion.com.ar/conversaciones-de-domingo/pablo-aristizabal-mas-alla-del-homeschooling-de-milei-hay-que-pensar-una-integracion-de-las-familias-nid28012024/",
+    "title": "Hay que pensar una integración de las familias con la escuela a través de la tecnología",
+    "source": "La Nación · La Repregunta",
+    "image_source": "https://www.lanacion.com.ar/resizer/v2/entrevista-a-pablo-aristizabal-especialista-en-HTRKG67NDRFIPLXK4YUVLT2FLY.JPG?auth=1ee92d77f91c8a98c2b12676bb6e0263545659c4ac24b05975ef37c6e73aa96c&width=1200&height=800&quality=70&smart=true",
+    "image": "assets/img/nota-la-nacion.webp",
+    "summary": "El especialista propone un uso virtuoso de la IA y el crecimiento económico como base del desarrollo educativo"
+  }
+]
