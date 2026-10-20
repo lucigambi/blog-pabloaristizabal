@@ -11,33 +11,94 @@ document.querySelector('[data-copy]')?.addEventListener('click',async()=>{const 
 const share=document.querySelector('[data-share]');if(share){share.hidden=!navigator.share;share.addEventListener('click',async()=>{try{await navigator.share({title:document.title,url:location.href});}catch(e){if(e.name!=='AbortError')document.querySelector('.share-status').textContent='Podés usar el botón Copiar enlace.';}});}
 document.querySelectorAll('[data-carousel]').forEach(carousel => {
   const track = carousel.querySelector('.press-track');
+  const cards = [...track.children];
   const previous = carousel.querySelector('[data-prev]');
   const next = carousel.querySelector('[data-next]');
-  const cards = [...track.children];
   const status = carousel.querySelector('[data-carousel-status]');
-  const step = () => cards[0].getBoundingClientRect().width + parseFloat(getComputedStyle(track).columnGap);
-  function update() {
-    const max = track.scrollWidth - track.clientWidth;
-    previous.disabled = track.scrollLeft < 2;
-    next.disabled = track.scrollLeft >= max - 2;
-    const first = Math.round(track.scrollLeft / step()) + 1;
-    const visible = Math.max(1, Math.round(track.clientWidth / step()));
-    const last = Math.min(cards.length, first + visible - 1);
-    status.textContent = first === last ? `${first} de ${cards.length} notas` : `${first}–${last} de ${cards.length} notas`;
+  status.textContent = `${cards.length} notas`;
+  if (cards.length < 2) {
+    previous.disabled = next.disabled = true;
+    return;
+  }
+  // Copias a ambos lados: el salto de posición reproduce el mismo cuadro visual.
+  function duplicate(card) {
+    const copy = card.cloneNode(true);
+    copy.dataset.carouselClone = '';
+    copy.setAttribute('aria-hidden', 'true');
+    copy.querySelectorAll('a,button,[tabindex]').forEach(node => node.setAttribute('tabindex', '-1'));
+    return copy;
+  }
+  track.prepend(...cards.map(duplicate));
+  track.append(...cards.map(duplicate));
+  track.classList.add('is-looping');
+  previous.disabled = next.disabled = false;
+  let stride = 0, cycle = 0, position = 0, lastTime = 0;
+  let visible = false, hovered = false, focused = false, dragging = false;
+  let holdUntil = 0, animation = null;
+  function wrap(value) {
+    return cycle + ((value - cycle) % cycle + cycle) % cycle;
+  }
+  function measure() {
+    const fraction = cycle ? (position - cycle) / cycle : 0;
+    stride = cards[0].getBoundingClientRect().width + parseFloat(getComputedStyle(track).columnGap);
+    cycle = stride * cards.length;
+    position = wrap(cycle * (1 + fraction));
+    animation = null;
+    track.scrollLeft = position;
   }
   function move(direction) {
-    track.scrollBy({left: direction * step(), behavior: matchMedia('(prefers-reduced-motion: reduce)').matches ? 'instant' : 'smooth'});
+    const now = performance.now();
+    animation = {from: position, distance: direction * stride, start: now};
+    holdUntil = now + 3500;
+    const index = ((Math.round((position - cycle) / stride) + direction) % cards.length + cards.length) % cards.length;
+    status.textContent = `Nota ${index + 1} de ${cards.length}`;
   }
   previous.addEventListener('click', () => move(-1));
   next.addEventListener('click', () => move(1));
   track.addEventListener('keydown', event => {
-    if (event.target !== track) return;
-    if (event.key === 'ArrowLeft' || event.key === 'ArrowRight') {
-      event.preventDefault();
-      move(event.key === 'ArrowLeft' ? -1 : 1);
-    }
+    if (event.target !== track || !['ArrowLeft', 'ArrowRight'].includes(event.key)) return;
+    event.preventDefault();
+    move(event.key === 'ArrowLeft' ? -1 : 1);
   });
-  track.addEventListener('scroll', update, {passive:true});
-  new ResizeObserver(update).observe(track);
-  update();
+  carousel.addEventListener('pointerenter', event => { if (event.pointerType === 'mouse') hovered = true; });
+  carousel.addEventListener('pointerleave', () => { hovered = false; });
+  carousel.addEventListener('focusin', () => { focused = true; });
+  carousel.addEventListener('focusout', event => { focused = carousel.contains(event.relatedTarget); });
+  track.addEventListener('pointerdown', () => { dragging = true; animation = null; });
+  const release = () => { dragging = false; holdUntil = performance.now() + 2500; };
+  window.addEventListener('pointerup', release);
+  window.addEventListener('pointercancel', release);
+  track.addEventListener('wheel', () => { animation = null; holdUntil = performance.now() + 2500; }, {passive: true});
+  track.addEventListener('scroll', () => {
+    // No perder la precisión fraccional del avance automático.
+    if (Math.abs(track.scrollLeft - position) > 2) {
+      position = track.scrollLeft;
+      if (cycle) {
+        const normalized = wrap(position);
+        if (Math.abs(normalized - position) > 2) track.scrollLeft = normalized;
+        position = normalized;
+      }
+    }
+  }, {passive: true});
+  new IntersectionObserver(entries => { visible = entries[0].isIntersecting; }).observe(carousel);
+  new ResizeObserver(measure).observe(track);
+  measure();
+  function tick(now) {
+    const elapsed = lastTime ? Math.min(now - lastTime, 50) : 0;
+    lastTime = now;
+    if (visible && !document.hidden && cycle) {
+      if (animation) {
+        const progress = Math.min((now - animation.start) / 650, 1);
+        const eased = (1 - Math.cos(Math.PI * progress)) / 2;
+        position = wrap(animation.from + animation.distance * eased);
+        track.scrollLeft = position;
+        if (progress === 1) animation = null;
+      } else if (!hovered && !focused && !dragging && now > holdUntil && document.documentElement.dataset.motion !== 'paused') {
+        position = wrap(position + elapsed * .018);
+        track.scrollLeft = position;
+      }
+    }
+    requestAnimationFrame(tick);
+  }
+  requestAnimationFrame(tick);
 });

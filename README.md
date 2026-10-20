@@ -16,6 +16,7 @@ También se puede abrir index.html directamente; compartir y copiar enlaces depe
 - Texto completo: contenido/biografia.html y contenido/gobernar-la-ia.html.
 - Fuentes del ensayo: contenido/fuentes.html.
 - Catálogo editorial: contenido/publicaciones.json.
+- Carrusel de entrevistas: contenido/prensa.json. Agregar cada nota con `source`, `title`, `summary` literal, `url` e `image` local y ejecutar `python scripts/build.py`. El carrusel calcula automáticamente el total y mantiene el bucle al sumar entrevistas. Avanza suavemente mientras está visible; se pausa con el mouse, el foco, la interacción táctil o el botón general Pausar animaciones. Las flechas funcionan en ambos sentidos sin extremos.
 - Plantillas de páginas: scripts/build.py.
 
 Después de editar los contenidos o las plantillas, ejecutar `python scripts/build.py`. No editar los HTML generados si se desea conservar el cambio al regenerar.
