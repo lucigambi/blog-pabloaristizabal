@@ -16,6 +16,7 @@ También se puede abrir index.html directamente; compartir y copiar enlaces depe
 - Texto completo: contenido/biografia.html y contenido/gobernar-la-ia.html.
 - Fuentes del ensayo: contenido/fuentes.html.
 - Catálogo editorial: contenido/publicaciones.json.
+- Premios de portada: contenido/reconocimientos.json y logos en assets/img/premios/. Copiados del sitio local de Mendoza Aumentada; el carrusel infinito toma automáticamente todos los registros al regenerar.
 - Carrusel de entrevistas: contenido/prensa.json. Agregar cada nota con `source`, `title`, `summary` literal, `url` e `image` local y ejecutar `python scripts/build.py`. El carrusel calcula automáticamente el total y mantiene el bucle al sumar entrevistas. Avanza suavemente mientras está visible; se pausa con el mouse, el foco, la interacción táctil o el botón general Pausar animaciones. Las flechas funcionan en ambos sentidos sin extremos.
 - Plantillas de páginas: scripts/build.py.
 

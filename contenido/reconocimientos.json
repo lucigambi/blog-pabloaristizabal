@@ -1,0 +1,85 @@
+[
+  {
+    "id": "time",
+    "institution": "TIME / STATISTA",
+    "name": "Top 100 EdTech Companies",
+    "description": "Selección mundial de las 100 mejores empresas de tecnología educativa (2026).",
+    "src": "assets/img/premios/martin-times.png",
+    "alt": "TIME - World's Top EdTech Companies",
+    "featured": true
+  },
+  {
+    "id": "sadosky",
+    "institution": "CESSI",
+    "name": "Premio Sadosky",
+    "description": "Mejor Innovación Educativa y Scale Up 2025",
+    "src": "assets/img/premios/premios__Sadosky.png",
+    "alt": "Premios Sadosky",
+    "featured": true
+  },
+  {
+    "id": "youtube",
+    "institution": "YOUTUBE",
+    "name": "Botones de oro",
+    "description": "Entregados por YouTube a los canales Aula365 y Educatina.",
+    "src": "assets/img/premios/premios__youtube.png",
+    "alt": "YouTube",
+    "featured": true
+  },
+  {
+    "id": "holoniq",
+    "institution": "HOLONIQ",
+    "name": "Top 200",
+    "description": "Selección global de 200 empresas de tecnología educativa.",
+    "src": "assets/img/premios/premios__holon.png",
+    "alt": "HolonIQ",
+    "featured": true
+  },
+  {
+    "id": "guinness",
+    "institution": "GUINNESS WORLD RECORDS",
+    "name": "Récord mundial",
+    "description": "Al cómic colaborativo con la mayor cantidad de autores del mundo.",
+    "src": "assets/img/premios/premios__Guinness.png",
+    "alt": "Guinness World Records",
+    "featured": true
+  },
+  {
+    "id": "tato",
+    "institution": "CAPIT",
+    "name": "Premio Tato",
+    "description": "Mejor programa infantil, por la serie Los Creadores (2017).",
+    "src": "assets/img/premios/tato.webp",
+    "alt": "Premio Tato",
+    "featured": false,
+    "logoSize": "small"
+  },
+  {
+    "id": "parents",
+    "institution": "PARENTS' CHOICE FOUNDATION",
+    "name": "Parents' Choice Awards",
+    "description": "Sello de calidad otorgado a productos educativos para chicos y familias.",
+    "src": "assets/img/premios/premios__parents.png",
+    "alt": "Parents' Choice",
+    "featured": false
+  },
+  {
+    "id": "wsa",
+    "institution": "WORLD SUMMIT AWARDS",
+    "name": "Innovación educativa",
+    "description": "Otorgado por la ONU al Programa de Alfabetización Digital (2005).",
+    "src": "assets/img/premios/premios__wsa.png",
+    "alt": "World Summit Award",
+    "featured": false,
+    "logoSize": "large"
+  },
+  {
+    "id": "martinfierro",
+    "institution": "APTRA",
+    "name": "Premio Martín Fierro",
+    "description": "Mejor programa infantil por la serie transmedia Los Creadores (2016).",
+    "src": "assets/img/premios/martin-fierro.png",
+    "alt": "Premio Martín Fierro",
+    "featured": false
+  }
+]

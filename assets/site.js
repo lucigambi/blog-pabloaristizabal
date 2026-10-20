@@ -15,7 +15,9 @@ document.querySelectorAll('[data-carousel]').forEach(carousel => {
   const previous = carousel.querySelector('[data-prev]');
   const next = carousel.querySelector('[data-next]');
   const status = carousel.querySelector('[data-carousel-status]');
-  status.textContent = `${cards.length} notas`;
+  const itemLabel = carousel.dataset.itemLabel || 'Nota';
+  const itemsLabel = carousel.dataset.itemsLabel || 'notas';
+  status.textContent = `${cards.length} ${itemsLabel}`;
   if (cards.length < 2) {
     previous.disabled = next.disabled = true;
     return;
@@ -51,7 +53,7 @@ document.querySelectorAll('[data-carousel]').forEach(carousel => {
     animation = {from: position, distance: direction * stride, start: now};
     holdUntil = now + 3500;
     const index = ((Math.round((position - cycle) / stride) + direction) % cards.length + cards.length) % cards.length;
-    status.textContent = `Nota ${index + 1} de ${cards.length}`;
+    status.textContent = `${itemLabel} ${index + 1} de ${cards.length}`;
   }
   previous.addEventListener('click', () => move(-1));
   next.addEventListener('click', () => move(1));
