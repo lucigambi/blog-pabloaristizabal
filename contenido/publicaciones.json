@@ -1,0 +1,55 @@
+[
+  {
+    "title": "El espíritu emprendedor, el futuro de un país",
+    "summary": "El futuro de una nación depende de su capacidad para cultivar miles de personas con iniciativas, capaces de transformar ideas en creaciones, generar valor y multiplicar oportunidades de trabajo. El desafío es construir una sociedad donde el espíritu emprendedor pueda florecer y convertirse en una fuerza de desarrollo.",
+    "type": "Ensayos",
+    "topic": "Emprendimiento",
+    "date": "Octubre de 2026",
+    "minutes": 26,
+    "url": "ensayos/el-espiritu-emprendedor.html",
+    "image": "ensayos/el-espiritu-emprendedor.jpg",
+    "image_alt": "Un brote crece entre un campo verde y uno dorado, con raíces extendidas bajo la tierra",
+    "content": "contenido/el-espiritu-emprendedor.html",
+    "sources": "contenido/el-espiritu-emprendedor-fuentes.html",
+    "author": "Pablo Aristizábal",
+    "original": "https://claude.ai/artifact/GvShXe9PfE98NKf7dwsLP7"
+  },
+  {
+    "title": "Gobernar la IA o ser gobernados por ella",
+    "summary": "Por qué la abstención escolar no protege a los estudiantes: los entrega al default.",
+    "type": "Ensayos",
+    "topic": "IA y educación",
+    "date": "Octubre de 2026",
+    "minutes": 12,
+    "url": "ensayos/gobernar-la-ia.html",
+    "image": "ensayos/gobernar-la-ia.jpg"
+  },
+  {
+    "title": "Mendoza Aumentada ganó el Premio Sadosky",
+    "summary": "Innovación en la Formación de Talento",
+    "type": "Noticias",
+    "topic": "Premios",
+    "date": "2026",
+    "minutes": 1,
+    "url": "noticias/mendoza-aumentada-premio-sadosky-2026.html",
+    "image": "assets/img/premio-sadosky-mendoza-aumentada.jpg",
+    "image_alt": "Mendoza Aumentada en los Premios Sadosky 2026",
+    "content": "contenido/mendoza-aumentada-premio-sadosky-2026.html",
+    "sources": "contenido/mendoza-aumentada-premio-sadosky-2026-fuentes.html",
+    "author": "Prensa · FlexFlix"
+  },
+  {
+    "title": "De 6.500 empresas EdTech e IA analizadas en el mundo, FlexFlix alcanzó el puesto #59",
+    "summary": "TIME y Statista reconocieron a FlexFlix, empresa argentina de IA y Educación, entre las compañías de tecnología educativa mejor posicionadas del mundo.",
+    "type": "Noticias",
+    "topic": "Premios",
+    "date": "2026",
+    "minutes": 1,
+    "url": "noticias/flexflix-ranking-time-2026.html",
+    "image": "assets/img/time-edtech-2026.jpg",
+    "image_alt": "TIME World's Top EdTech Companies 2026 · in partnership with Statista",
+    "content": "contenido/flexflix-ranking-time-2026.html",
+    "sources": "contenido/flexflix-ranking-time-2026-fuentes.html",
+    "author": "Prensa · FlexFlix"
+  }
+]

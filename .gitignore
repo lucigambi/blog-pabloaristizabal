@@ -1,0 +1,10 @@
+/assets/FotosOriginales (No modificar)/
+/dist/
+/.vercel/
+__pycache__/
+*.pyc
+.env
+.env.*
+/originales/*
+!/originales/home.html
+!/originales/ensayo.html

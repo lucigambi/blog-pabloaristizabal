@@ -1,0 +1,257 @@
+[
+  {
+    "original": "01bbb379-67a5-4f85-936b-631e08b25363 (1).jpeg",
+    "sha256_original": "0ac3be1400964fd2dc3c8dee869b18825ef4e68dab2cbac368c435cc367522b2",
+    "image": "assets/img/prensa-01bbb379-67a5-4f85-936b-631e08b25363-1.webp",
+    "original_dimensions": [
+      1448,
+      1086
+    ],
+    "dimensions": [
+      1448,
+      1086
+    ],
+    "original_bytes": 216498,
+    "optimized_bytes": 113186
+  },
+  {
+    "original": "16.jpg",
+    "sha256_original": "61fbd033533370e50393970878a95c29438cfedbdc20f953b0241fb20134059d",
+    "image": "assets/img/prensa-16.webp",
+    "original_dimensions": [
+      5760,
+      3840
+    ],
+    "dimensions": [
+      1920,
+      1280
+    ],
+    "original_bytes": 12707785,
+    "optimized_bytes": 97728
+  },
+  {
+    "original": "1e33b428-6cd7-4c7e-908c-8f69ca03862c.jpeg",
+    "sha256_original": "ba07a7ef035e9c3b8a2f936f34300c84e5e6e47a9058e85ce2603c7b0ef8ddb5",
+    "image": "assets/img/prensa-1e33b428-6cd7-4c7e-908c-8f69ca03862c.webp",
+    "original_dimensions": [
+      1600,
+      685
+    ],
+    "dimensions": [
+      1600,
+      685
+    ],
+    "original_bytes": 142307,
+    "optimized_bytes": 77980
+  },
+  {
+    "original": "3ff073b7-e01a-4c23-ba53-da8d20aee61f (1).jpeg",
+    "sha256_original": "2862bb4fc31e02411dd76682902ff73fefc3a7114e5db4c34138af0f1fc70e12",
+    "image": "assets/img/prensa-3ff073b7-e01a-4c23-ba53-da8d20aee61f-1.webp",
+    "original_dimensions": [
+      1122,
+      1402
+    ],
+    "dimensions": [
+      1122,
+      1402
+    ],
+    "original_bytes": 173907,
+    "optimized_bytes": 72452
+  },
+  {
+    "original": "3ff073b7-e01a-4c23-ba53-da8d20aee61f (2).jpeg",
+    "sha256_original": "2862bb4fc31e02411dd76682902ff73fefc3a7114e5db4c34138af0f1fc70e12",
+    "image": "assets/img/prensa-3ff073b7-e01a-4c23-ba53-da8d20aee61f-1.webp",
+    "original_dimensions": [
+      1122,
+      1402
+    ],
+    "dimensions": [
+      1122,
+      1402
+    ],
+    "original_bytes": 173907,
+    "optimized_bytes": 72452
+  },
+  {
+    "original": "40.jpg",
+    "sha256_original": "0a20534c79d2418fb7d02368fd93351ad71b3456128b7c297a6e210ff9b87cac",
+    "image": "assets/img/prensa-40.webp",
+    "original_dimensions": [
+      5760,
+      3840
+    ],
+    "dimensions": [
+      1920,
+      1280
+    ],
+    "original_bytes": 17179731,
+    "optimized_bytes": 125852
+  },
+  {
+    "original": "49.jpg",
+    "sha256_original": "09e5b268634f416d6ca1ec7f4bbd91c5483de4c480b90940fa88767941c3a70a",
+    "image": "assets/img/prensa-49.webp",
+    "original_dimensions": [
+      2560,
+      3840
+    ],
+    "dimensions": [
+      1280,
+      1920
+    ],
+    "original_bytes": 5347717,
+    "optimized_bytes": 120034
+  },
+  {
+    "original": "5.jpg",
+    "sha256_original": "1129e526565e2e479e22f6f93d251d30b09e469be71b529bf89679e27a24bb8e",
+    "image": "assets/img/prensa-5.webp",
+    "original_dimensions": [
+      5760,
+      3840
+    ],
+    "dimensions": [
+      1920,
+      1280
+    ],
+    "original_bytes": 14937195,
+    "optimized_bytes": 221456
+  },
+  {
+    "original": "64.jpg",
+    "sha256_original": "13ee7593de94d90e4dfed61c47a2f9b89868dc6ac41aa4bf3163133a51966204",
+    "image": "assets/img/prensa-64.webp",
+    "original_dimensions": [
+      2560,
+      3840
+    ],
+    "dimensions": [
+      1280,
+      1920
+    ],
+    "original_bytes": 6088142,
+    "optimized_bytes": 202680
+  },
+  {
+    "original": "65.jpg",
+    "sha256_original": "519c47bda2286ce3d03cddc2eb3ca5845a345b1d28f5a62ca3794d048a48bdfd",
+    "image": "assets/img/prensa-65.webp",
+    "original_dimensions": [
+      2560,
+      3840
+    ],
+    "dimensions": [
+      1280,
+      1920
+    ],
+    "original_bytes": 5500903,
+    "optimized_bytes": 141624
+  },
+  {
+    "original": "67.jpg",
+    "sha256_original": "c7f15cafe2c707af81ee5f65d99923c1810b7c0df5909b8f7583b98ffd45fe84",
+    "image": "assets/img/prensa-67.webp",
+    "original_dimensions": [
+      2560,
+      3840
+    ],
+    "dimensions": [
+      1280,
+      1920
+    ],
+    "original_bytes": 5132009,
+    "optimized_bytes": 118826
+  },
+  {
+    "original": "81.jpg",
+    "sha256_original": "45ed2f9b9894e8bf7db5ff629c4b2d6227abe57250dea8c9db45db627b67dc14",
+    "image": "assets/img/prensa-81.webp",
+    "original_dimensions": [
+      2560,
+      3840
+    ],
+    "dimensions": [
+      1280,
+      1920
+    ],
+    "original_bytes": 7044587,
+    "optimized_bytes": 109220
+  },
+  {
+    "original": "98a9c4cf-1407-4ae0-988a-109ef5bd4fe6 (1).jpeg",
+    "sha256_original": "6bdf09714bd2adffbc284e262de86b4d9b60edd3b4c703a060f2ccf9395107cf",
+    "image": "assets/img/prensa-98a9c4cf-1407-4ae0-988a-109ef5bd4fe6-1.webp",
+    "original_dimensions": [
+      1448,
+      1086
+    ],
+    "dimensions": [
+      1448,
+      1086
+    ],
+    "original_bytes": 182761,
+    "optimized_bytes": 85130
+  },
+  {
+    "original": "9fa7c3b2-9a82-4413-8d86-f5bb8c491a59 (1).jpeg",
+    "sha256_original": "0c16c8a313ee149f365f2d91e3e6b1e485a2be947669b83ced49a161ee2e1ead",
+    "image": "assets/img/prensa-9fa7c3b2-9a82-4413-8d86-f5bb8c491a59-1.webp",
+    "original_dimensions": [
+      1254,
+      1254
+    ],
+    "dimensions": [
+      1254,
+      1254
+    ],
+    "original_bytes": 190817,
+    "optimized_bytes": 95080
+  },
+  {
+    "original": "Dana Correa _ Alejo _ Pablo Aristizábal _ Tadeo G. Zalazar _ Romina.PNG",
+    "sha256_original": "773ec3e3289fa99e8996ca3a686419aff2bfdb438624e962182a8e3cf449051b",
+    "image": "assets/img/prensa-dana-correa-alejo-pablo-aristizabal-tadeo-g-zalazar-romina.webp",
+    "original_dimensions": [
+      1086,
+      1448
+    ],
+    "dimensions": [
+      1086,
+      1448
+    ],
+    "original_bytes": 3206728,
+    "optimized_bytes": 176388
+  },
+  {
+    "original": "FlexFlix.jpg",
+    "sha256_original": "f7097a999e8feb4b88b6596ef897f36e16eb8c70051dd7a75104aaff485fd742",
+    "image": "assets/img/prensa-flexflix.webp",
+    "original_dimensions": [
+      1058,
+      892
+    ],
+    "dimensions": [
+      1058,
+      892
+    ],
+    "original_bytes": 209241,
+    "optimized_bytes": 116108
+  },
+  {
+    "original": "Premio-Sadosky Mendoza-Aumentada.jpg",
+    "sha256_original": "ee854806aa08394b882ff085ed52232032d0084acd820a1ab6d12d3bcdab8e02",
+    "image": "assets/img/prensa-premio-sadosky-mendoza-aumentada.webp",
+    "original_dimensions": [
+      1536,
+      1024
+    ],
+    "dimensions": [
+      1536,
+      1024
+    ],
+    "original_bytes": 127254,
+    "optimized_bytes": 127806
+  }
+]

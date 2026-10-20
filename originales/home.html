@@ -1,0 +1,312 @@
+<!doctype html><html lang="es"><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style>
+<title>Pablo Aristizábal</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<meta name="description" content="Educador, emprendedor tecnológico y ensayista. Pionero de la educación digital en América Latina y de la IA en las aulas con propósito pedagógico y curricular.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: a photo-led masthead that bleeds into a night-blue page; one reading column with a wide aside band for evidence. Single dark look, matched to the header photo. */
+:root {
+  --night: #0b1120;
+  --night-2: #121a2e;
+  --line: #24304a;
+  --chalk: #e9edf5;
+  --chalk-dim: #a6b0c4;
+  --lamp: #f0a94b;   /* the desk lamp in the photo */
+  --globe: #6cc4ff;  /* the globe's glow */
+  --display: "Bricolage Grotesque", "Helvetica Neue", Arial, sans-serif;
+  --body: "Source Serif 4", Georgia, "Times New Roman", serif;
+  --mono: "IBM Plex Mono", ui-monospace, Menlo, monospace;
+  color-scheme: dark;
+}
+* { box-sizing: border-box; }
+body {
+  background: var(--night);
+  color: var(--chalk);
+  font-family: var(--body);
+  font-size: 18px;
+  line-height: 1.65;
+  -webkit-font-smoothing: antialiased;
+}
+a { color: var(--globe); text-decoration-thickness: 1px; text-underline-offset: 3px; }
+a:hover { color: var(--chalk); }
+a:focus-visible { outline: 2px solid var(--lamp); outline-offset: 3px; border-radius: 2px; }
+
+.wrap {
+  max-width: 1120px;
+  margin: 0 auto;
+  padding-left: max(16px, env(safe-area-inset-left, 0px));
+  padding-right: max(16px, env(safe-area-inset-right, 0px));
+}
+
+/* Masthead */
+.mast { position: relative; background: #070b16; }
+.mast img {
+  display: block; width: 100%; max-width: 100%; height: auto;
+  aspect-ratio: 1916 / 821; object-fit: cover; object-position: 60% center;
+}
+.mast::after {
+  content: ""; position: absolute; inset: 0;
+  background: linear-gradient(90deg, rgba(11,17,32,.92) 0%, rgba(11,17,32,.55) 34%, rgba(11,17,32,0) 58%),
+              linear-gradient(0deg, var(--night) 0%, rgba(11,17,32,0) 28%);
+  pointer-events: none;
+}
+.mast-text {
+  position: absolute; inset: 0; z-index: 1;
+  display: flex; align-items: center;
+}
+.mast-text .wrap { width: 100%; }
+.mast-copy { max-width: 30rem; }
+.eyebrow {
+  font-family: var(--mono); font-size: 12.5px; letter-spacing: .14em; text-transform: uppercase;
+  color: var(--lamp); margin: 0 0 14px;
+}
+h1 {
+  font-family: var(--display); font-weight: 800; font-size: clamp(40px, 6vw, 76px);
+  line-height: .98; letter-spacing: -.02em; margin: 0; text-wrap: balance;
+}
+.roles {
+  font-family: var(--display); font-weight: 500; font-size: clamp(17px, 1.7vw, 21px);
+  color: var(--chalk-dim); margin: 16px 0 0; line-height: 1.4;
+}
+
+/* Thesis */
+.thesis { padding-block: 40px 8px; }
+.thesis p {
+  font-family: var(--display); font-weight: 700;
+  font-size: clamp(30px, 4.6vw, 56px); line-height: 1.05; letter-spacing: -.02em;
+  margin: 0; text-wrap: balance;
+}
+.thesis .first { color: var(--chalk); }
+.thesis .then { color: var(--globe); }
+
+/* Main grid */
+.main { display: grid; grid-template-columns: minmax(0, 1fr) 320px; gap: 64px; padding-block: 40px 24px; }
+.col { min-width: 0; max-width: 40rem; }
+h2 {
+  font-family: var(--mono); font-weight: 500; font-size: 12.5px; letter-spacing: .14em; text-transform: uppercase;
+  color: var(--chalk-dim); margin: 0 0 18px; padding-bottom: 10px; border-bottom: 1px solid var(--line);
+}
+.col p { margin: 0 0 1.1em; }
+.col strong { font-weight: 600; color: #fff; }
+
+.bridge {
+  margin: 32px 0; padding: 26px 28px;
+  background: var(--night-2); border: 1px solid var(--line); border-radius: 6px;
+}
+.bridge .kicker {
+  font-family: var(--display); font-weight: 700; font-size: clamp(22px, 2.6vw, 28px);
+  line-height: 1.15; margin: 0 0 12px; color: var(--lamp); text-wrap: balance;
+}
+.bridge p:last-child { margin: 0; }
+
+blockquote {
+  margin: 40px 0; padding: 0 0 0 22px; border-left: 2px solid var(--globe);
+  font-style: italic; font-size: 21px; line-height: 1.55; color: var(--chalk);
+}
+blockquote footer {
+  font-style: normal; font-family: var(--mono); font-size: 12.5px; letter-spacing: .08em;
+  color: var(--chalk-dim); margin-top: 10px;
+}
+
+/* Aside */
+aside { min-width: 0; display: flex; flex-direction: column; gap: 36px; }
+.facts { display: grid; gap: 0; }
+.fact { padding: 14px 0; border-bottom: 1px solid var(--line); }
+.fact:first-child { padding-top: 0; }
+.fact b {
+  display: block; font-family: var(--display); font-weight: 800; font-size: 30px; line-height: 1.1;
+  letter-spacing: -.01em; color: var(--chalk); font-variant-numeric: tabular-nums;
+}
+.fact span { font-size: 15px; color: var(--chalk-dim); line-height: 1.45; display: block; margin-top: 4px; }
+
+.badge {
+  display: flex; gap: 16px; align-items: center;
+  padding: 16px; background: var(--night-2); border: 1px solid var(--line); border-radius: 6px;
+}
+.badge img { width: 74px; height: auto; flex: none; border-radius: 2px; }
+.badge p { margin: 0; font-size: 15px; line-height: 1.45; color: var(--chalk-dim); }
+.badge p strong { color: var(--chalk); font-weight: 600; display: block; }
+
+/* Sections below */
+.band { border-top: 1px solid var(--line); padding-block: 48px; }
+.talks { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 28px 40px; }
+.talks li h3 {
+  font-family: var(--display); font-weight: 700; font-size: 22px; line-height: 1.2; margin: 0 0 6px; text-wrap: balance;
+}
+.talks li p { margin: 0; font-size: 16.5px; color: var(--chalk-dim); }
+
+.awards { list-style: none; margin: 0; padding: 0; }
+.awards li {
+  display: grid; grid-template-columns: 110px minmax(0, 1fr); gap: 20px;
+  padding: 14px 0; border-bottom: 1px solid var(--line); font-size: 16.5px;
+}
+.awards li:last-child { border-bottom: 0; }
+.awards .yr { font-family: var(--mono); font-size: 13.5px; color: var(--lamp); padding-top: 3px; font-variant-numeric: tabular-nums; }
+.awards .new .yr { color: var(--globe); }
+.awards strong { color: #fff; font-weight: 600; }
+
+.press { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0 40px; }
+.press li { padding: 14px 0; border-bottom: 1px solid var(--line); font-size: 16.5px; min-width: 0; }
+.press .src { display: block; font-family: var(--mono); font-size: 12px; letter-spacing: .1em; text-transform: uppercase; color: var(--chalk-dim); margin-bottom: 3px; }
+
+.contact { display: flex; flex-wrap: wrap; gap: 12px 32px; font-family: var(--display); font-size: 20px; font-weight: 500; }
+footer.end {
+  padding-block: 32px 48px; font-family: var(--mono); font-size: 12.5px; color: var(--chalk-dim); letter-spacing: .06em;
+  border-top: 1px solid var(--line);
+}
+
+/* Phone */
+@media (max-width: 860px) {
+  .main { grid-template-columns: minmax(0, 1fr); gap: 48px; }
+  .talks, .press { grid-template-columns: minmax(0, 1fr); }
+}
+@media (max-width: 640px) {
+  body { font-size: 17px; }
+  .mast img { aspect-ratio: 4 / 3; object-position: 58% center; }
+  .mast::after { background: linear-gradient(0deg, var(--night) 0%, rgba(11,17,32,.2) 45%, rgba(11,17,32,0) 70%); }
+  .mast-text { position: static; display: block; margin-top: -64px; }
+  .mast-copy { position: relative; z-index: 2; }
+  .awards li { grid-template-columns: minmax(0, 1fr); gap: 2px; }
+  .bridge { padding: 22px 20px; }
+}
+@media (prefers-reduced-motion: no-preference) {
+  .mast-copy { animation: rise .7s ease-out both; }
+  @keyframes rise { from { transform: translateY(10px); } to { transform: none; } }
+}
+</style>
+</head>
+<body>
+
+<header class="mast">
+  <img src="header.jpg" alt="Pablo Aristizábal sentado a un escritorio, con libros, una laptop y un globo terráqueo luminoso de fondo">
+  <div class="mast-text">
+    <div class="wrap">
+      <div class="mast-copy">
+        <p class="eyebrow">Educación · Inteligencia artificial</p>
+        <h1>Pablo Aristizábal</h1>
+        <p class="roles">Educador, emprendedor tecnológico y ensayista. Fundador y CEO de FlexFlix.ai</p>
+      </div>
+    </div>
+  </div>
+</header>
+
+<section class="thesis">
+  <div class="wrap">
+    <p><span class="first">Pensar primero,</span> <span class="then">IA después.</span></p>
+  </div>
+</section>
+
+<div class="wrap main">
+  <article class="col">
+    <h2>Biografía</h2>
+    <p>Pablo Aristizábal es uno de los pioneros de la educación digital en América Latina. Desde hace casi 30 años, cada vez que cambió la tecnología (internet, el video, el streaming y ahora la inteligencia artificial), estuvo entre los primeros en convertirla en una herramienta para aprender.</p>
+    <p>En 1998 fundó Competir EdTech, desde donde creó <strong>Aula365</strong>, la red de aprendizaje que llevó a seis países junto a Telefónica, y <strong>Los Creadores</strong>, la serie de ciencia emitida por Telefe y distribuida por Netflix en tres idiomas. Fue además socio fundador de <strong>Educatina</strong>, el canal de educación secundaria más grande de YouTube en español. Sus proyectos llegaron a más de 150 millones de usuarios.</p>
+    <p>Hoy es uno de los pioneros a nivel mundial en desplegar inteligencia artificial en las aulas con propósito pedagógico y curricular, bajo conducción docente. Su propuesta se apoya en dos principios: que los docentes conduzcan la enseñanza (<strong>soberanía pedagógica</strong>) y que los estudiantes piensen por sí mismos, usando la IA para ampliar sus capacidades sin delegarle la responsabilidad de pensar (<strong>soberanía cognitiva</strong>).</p>
+
+    <div class="bridge">
+      <p class="kicker">Esa visión no quedó en el ensayo: hoy es política pública.</p>
+      <p>Mendoza Aumentada, el programa de la Dirección General de Escuelas de Mendoza desarrollado con FlexFlix, lleva estos principios a 100 escuelas secundarias. En 2026 recibió el Premio Sadosky a la Innovación en la Formación de Talento.</p>
+    </div>
+
+    <p><strong>FlexFlix</strong>, la arquitectura de gobernanza pedagógica y cognitiva que fundó y dirige, trabaja con gobiernos de Argentina y Perú en más de 200 escuelas públicas. Las evaluaciones muestran mejoras en pensamiento crítico con tamaños de efecto de entre 0,76 y 0,87 (g de Hedges), un efecto alto en investigación educativa. Entre sus inversores está Cogna, el mayor grupo educativo privado de Brasil.</p>
+    <p>Es profesor de la Universidad de Buenos Aires, donde dirige desde 2007 la cátedra Emprendedor21. Como ensayista y columnista escribe sobre la autonomía del pensamiento en la era de la IA, y es conferencista internacional.</p>
+
+    <blockquote>
+      “Me preguntan si soy apocalíptico con la inteligencia artificial. Lo soy, pero no por lo que creen. La verdadera amenaza no es la IA: es que dejemos de pensar. Por eso primero se piensa, y después se usa la IA.”
+      <footer>Pablo Aristizábal</footer>
+    </blockquote>
+  </article>
+
+  <aside aria-label="Datos clave">
+    <div>
+      <h2>En números</h2>
+      <div class="facts">
+        <div class="fact"><b>~30 años</b><span>construyendo educación digital en América Latina</span></div>
+        <div class="fact"><b>+150 M</b><span>usuarios alcanzados por sus proyectos</span></div>
+        <div class="fact"><b>+200</b><span>escuelas públicas con FlexFlix en Argentina y Perú</span></div>
+        <div class="fact"><b>0,76–0,87</b><span>tamaño de efecto en pensamiento crítico (g de Hedges)</span></div>
+      </div>
+    </div>
+    <div class="badge">
+      <img src="time-2026.jpg" alt="Sello TIME World's Top EdTech Companies 2026, en asociación con Statista">
+      <p><strong>World's Top EdTech Companies 2026</strong>FlexFlix integra el ranking de TIME y Statista.</p>
+    </div>
+  </aside>
+</div>
+
+<section class="band">
+  <div class="wrap">
+    <h2>Temas de conferencia</h2>
+    <ul class="talks">
+      <li><h3>Pensar primero, IA después</h3><p>Por qué el riesgo no es la tecnología sino delegar el pensamiento, y cómo evitarlo en el aula.</p></li>
+      <li><h3>Soberanía pedagógica y soberanía cognitiva</h3><p>Docentes que conducen y alumnos que piensan: qué deben exigir escuelas y gobiernos a la IA educativa.</p></li>
+      <li><h3>Un Sarmiento para la inteligencia artificial</h3><p>Qué política educativa necesita América Latina para que la IA amplíe oportunidades en vez de profundizar brechas.</p></li>
+      <li><h3>30 años emprendiendo en educación</h3><p>Lo que enseñan Aula365, Los Creadores y FlexFlix sobre innovar ante cada ola tecnológica.</p></li>
+    </ul>
+  </div>
+</section>
+
+<section class="band">
+  <div class="wrap">
+    <h2>Reconocimientos</h2>
+    <div class="col" style="max-width:52rem">
+      <p>Sus proyectos recibieron más de 20 premios nacionales e internacionales.</p>
+      <ul class="awards">
+        <li class="new"><span class="yr">2026</span><span><strong>Premio Sadosky</strong>, Categoría Talento: Premio a la Innovación en la Formación de Talento, a Mendoza Aumentada (DGE Mendoza y FlexFlix).</span></li>
+        <li class="new"><span class="yr">2026</span><span><strong>TIME y Statista</strong>: FlexFlix integra el ranking World's Top EdTech Companies 2026.</span></li>
+        <li><span class="yr">2016</span><span><strong>Martín Fierro</strong> y <strong>Premio Tato</strong> al mejor programa infantil, por Los Creadores.</span></li>
+        <li><span class="yr">2005–2015</span><span><strong>World Summit Award</strong>, nacido en el marco de la Cumbre Mundial de la Sociedad de la Información de la ONU, incluido el máximo galardón, Global Champion, en e-Learning &amp; Science.</span></li>
+        <li><span class="yr">2015</span><span><strong>Sadosky de Oro</strong>, entre 10 Premios Sadosky (CESSI) a sus proyectos, y Emprendedor Tecnológico del Año.</span></li>
+        <li><span class="yr">2015</span><span>Declaración de Interés Cultural y Educativo de la Cámara de Diputados de la Nación.</span></li>
+        <li><span class="yr">2011</span><span><strong>Récord Guinness</strong> por el cómic colaborativo con más autores del mundo, creado en Aula365.</span></li>
+        <li><span class="yr">2007–2010</span><span>Premios Iberoamericanos a la Calidad Educativa.</span></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="band">
+  <div class="wrap">
+    <h2>En prensa</h2>
+    <ul class="press">
+      <li><span class="src">Forbes Argentina</span><a href="https://www.forbesargentina.com/innovacion/pablo-aristizabal-flexflix-necesitamos-sarmiento-inteligencia-artificial-n46098" target="_blank" rel="noopener">Necesitamos un Sarmiento de la Inteligencia Artificial</a></li>
+      <li><span class="src">Los Andes</span><a href="https://www.losandes.com.ar/sociedad/pablo-aristizabal-especialista-ia-la-verdadera-amenaza-es-que-dejemos-pensar-n5983135" target="_blank" rel="noopener">La verdadera amenaza es que dejemos de pensar</a></li>
+      <li><span class="src">La Nación · La Repregunta</span><a href="https://www.lanacion.com.ar/conversaciones-de-domingo/pablo-aristizabal-mas-alla-del-homeschooling-de-milei-hay-que-pensar-una-integracion-de-las-familias-nid28012024/" target="_blank" rel="noopener">Hay que pensar una integración de las familias con la escuela a través de la tecnología</a></li>
+      <li><span class="src">La Nación</span><a href="https://www.lanacion.com.ar/tecnologia/flexflix-asi-es-la-plataforma-educativa-argentina-basada-en-inteligencia-artificial-nid06112023/" target="_blank" rel="noopener">FlexFlix: así es la plataforma educativa argentina basada en Inteligencia Artificial</a></li>
+      <li><span class="src">Gobierno de Mendoza</span><a href="https://hportal.mendoza.edu.ar/mendoza-aumentada-una-herramienta-innovadora-al-servicio-del-desarrollo-de-habilidades-de-los-estudiantes/" target="_blank" rel="noopener">Mendoza Aumentada, una herramienta al servicio del desarrollo de habilidades</a></li>
+      <li><span class="src">Perfil</span><a href="https://www.perfil.com/autores/paristizabal" target="_blank" rel="noopener">Columnas de opinión</a></li>
+    </ul>
+  </div>
+</section>
+
+<section class="band" id="ensayos">
+  <div class="wrap">
+    <h2>Ensayos</h2>
+    <ul class="talks">
+      <li>
+        <a href="ensayos/gobernar-la-ia.html"><img src="ensayos/gobernar-la-ia.jpg" alt="Delegar o gobernar la IA en la educación" loading="lazy"></a>
+        <p>IA y educación · Octubre de 2026 · 12 min de lectura</p>
+        <h3><a href="ensayos/gobernar-la-ia.html">Gobernar la IA o ser gobernados por ella</a></h3>
+        <p>Por qué la abstención escolar no protege a los estudiantes: los entrega al default.</p>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<section class="band">
+  <div class="wrap">
+    <h2>Contacto</h2>
+    <div class="contact">
+      <a href="https://flexflix.ai" target="_blank" rel="noopener">flexflix.ai</a>
+      <a href="https://www.linkedin.com/in/paristizabal/" target="_blank" rel="noopener">linkedin.com/in/paristizabal</a>
+    </div>
+  </div>
+</section>
+
+<footer class="end">
+  <div class="wrap">FlexFlix.ai · Octubre 2026</div>
+</footer>
+
+</body></html>
