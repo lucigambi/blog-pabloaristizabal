@@ -52,6 +52,7 @@ h1 em{font-style:normal;font-weight:inherit;color:#697a57}
 .about-grid>div:last-child{align-self:center}
 .about-grid .eyebrow{color:var(--accent)}
 .about-grid p{color:#ced7cb;font-size:21px;line-height:1.7}
+.about-grid p.bio-highlight{font:600 clamp(23px,2.4vw,29px)/1.35 var(--sans);letter-spacing:-.02em;color:var(--accent);margin:28px 0;padding-top:24px;border-top:1px solid #ffffff25;max-width:700px}
 .about-grid .button{background:transparent;border:1px solid #82968a;color:var(--paper)}
 .stats{display:grid;grid-template-columns:1fr 1fr;gap:50px;padding-top:0;margin-top:44px;border-top:0}
 .stats>div{border-left:1px solid #a7b8a879;padding-left:22px}
