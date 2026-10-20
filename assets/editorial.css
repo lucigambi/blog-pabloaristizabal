@@ -150,16 +150,17 @@ blockquote footer{font:12px/1.6 var(--mono)}
 .carousel-controls button:disabled{opacity:.3;cursor:default}
 .press-track{display:flex;gap:24px;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;padding:5px 0 16px;overscroll-behavior-x:contain}
 .press-track::-webkit-scrollbar{display:none}
-.press-card{flex:0 0 calc((100% - 24px)/2);min-width:0;scroll-snap-align:start;border:1px solid var(--line);background:#eeeee5;display:flex;flex-direction:column}
+.press-card{flex:0 0 calc((100% - 48px)/3);min-width:0;scroll-snap-align:start;border:1px solid var(--line);background:#eeeee5;display:flex;flex-direction:column}
 .press-photo{display:block;overflow:hidden}
 .press-photo img{width:100%;height:auto;aspect-ratio:16/10;object-fit:cover;object-position:center 35%;transition:transform .35s}
 .press-photo:hover img{transform:scale(1.035)}
-.press-card-copy{padding:28px;display:flex;flex:1;flex-direction:column}
-.press-card h3{font:700 clamp(24px,2.5vw,31px)/1.2 var(--sans);letter-spacing:-.025em;margin:0 0 18px}
+.press-card-copy{padding:24px;display:flex;flex:1;flex-direction:column}
+.press-card h3{font:700 clamp(22px,2vw,26px)/1.2 var(--sans);letter-spacing:-.025em;margin:0 0 18px}
 .press-card h3 a{text-decoration:none}
 .press-card-copy>p:not(.meta){font:17px/1.6 var(--serif);color:var(--muted);margin-bottom:24px}
 .press-card .text-link{margin-top:auto;align-self:start}
 .carousel-status{font:11px/1.6 var(--mono);color:var(--muted);margin:4px 0 0}
+@media(min-width:761px) and (max-width:1000px){.press-card{flex-basis:calc((100% - 24px)/2)}}
 @media(max-width:760px){
  .press-carousel .section-head{flex-wrap:wrap}
  .press-actions{width:100%;justify-content:space-between;gap:16px}
