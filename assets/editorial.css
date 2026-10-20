@@ -48,8 +48,11 @@ h1 em{font-style:normal;font-weight:inherit;color:#697a57}
 .feature .text-link{display:inline-block;margin-top:8px}
 .about-band{background-color:#152924;padding-block:88px}
 .about-grid{grid-template-columns:280px minmax(0,1fr);gap:40px}
-.about-portrait{width:260px;max-width:100%;height:auto;margin-top:28px;border-radius:3px}
-.about-grid>div:last-child{align-self:center}
+.about-heading{margin-bottom:32px}
+.about-heading h2{margin-bottom:0}
+.about-heading .eyebrow{color:var(--accent)}
+.about-portrait{width:260px;max-width:100%;height:auto;margin-top:0;border-radius:3px}
+.about-grid>div:last-child{align-self:start}
 .about-grid .eyebrow{color:var(--accent)}
 .about-grid p{color:#ced7cb;font-size:21px;line-height:1.7}
 .about-grid p.bio-highlight{font:600 clamp(23px,2.4vw,29px)/1.35 var(--sans);letter-spacing:-.02em;color:var(--accent);margin:28px 0;padding-top:24px;border-top:1px solid #ffffff25;max-width:700px}
